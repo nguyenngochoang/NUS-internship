@@ -1,0 +1,41 @@
+
+#background{
+    width: fit-content;
+    border: double 5px white;
+    margin: auto;
+    padding: 10px;
+    background-color:  #333333;
+}
+#guide{
+    float: left;
+}
+#result{
+    width: 98%;
+    padding: 0;
+    height: 30px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+tr{
+    width: 100px;
+    border: solid 2px;
+}
+
+
+
+button{
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 30px;
+    height:100%;
+    width:100% !important;
+    background-color: #bab1ba;
+    border-radius: 5px;
+    
+}
+
+button:active{
+    position: relative;
+    top:2px;
+}
