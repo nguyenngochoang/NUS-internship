@@ -70,30 +70,27 @@ jQuery(function(){
             while(operator.includes("/")){
                 // index.push(operator.findIndex(x => x=="*")) ; // 1+6/3-4+5+9/3 => index = [1]
                 var index = operator.findIndex(x => x=="/");
-                var tempval2 = yArr[index]/yArr[index+1];
-                yArr[index]=tempval2;
-                yArr[index+1] = 0 ; // 1 2 0 4 5 3
-                operator[index]= "+" // + + - + + +
+                if(yArr[index+1]==0){
+                    $("#result").val("Divide by zero error!")
+                    return;
+                }
+                else{
+                    var tempval2 = yArr[index]/yArr[index+1];
+                    yArr[index]=tempval2;
+                    yArr[index+1] = 0 ; // 1 2 0 4 5 3
+                    operator[index]= "+" // + + - + + +
+                }
+              
 
             }
             
-            for(j=0;j<operator_len;j++){   
-                
-              
+            for(j=0;j<operator_len;j++){                 
                     switch(operator[j]){
                         case '+':
                             result+=yArr[j+1]
                             break;
                         case '-':
                             result -= yArr[j+1]
-                            break;
-                        case '/':
-                            if(yArr[j+1]==0){
-                                result = "Divided by zero!"
-                                break;
-                            }
-                            
-                            result /= yArr[j+1]
                             break;
                         default:
                             break;
@@ -103,6 +100,7 @@ jQuery(function(){
                
             }
             $("#result").val(result)
+            return;
         }
         
         
