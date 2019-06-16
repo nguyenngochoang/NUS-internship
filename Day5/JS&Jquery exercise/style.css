@@ -2,12 +2,15 @@
 #background{
     width: fit-content;
     border: double 5px white;
-    margin: auto;
+    margin-left: 300px;
     padding: 10px;
+    float: left;
     background-color:  #333333;
 }
 #guide{
     float: left;
+    margin-left: 40px;
+    margin-top : 30px;
 }
 #result{
     width: 98%;
@@ -38,4 +41,8 @@ button{
 button:active{
     position: relative;
     top:2px;
+}
+
+#result{
+    font-size: 18px;
 }

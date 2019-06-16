@@ -7,23 +7,36 @@ jQuery(function(){
         var y = "";
         yArr =[]
         operator = [];
-        var y_int = 0
+        var y_num = 0
+        var tempval = 0;
+        var index = [];
         for(i=0;i<text.length;i++){            
-            if ("" + parseInt(text[i]) != "NaN"){
+            if ("" + parseInt(text[i]) != "NaN"|| text[i]=="."){
                     y = y + text[i]
                     if(i==text.length-1){
-                        y_int =parseInt(y,10);
-                        yArr.push(y_int);
+                        if(y.includes(".")){
+                            y_num = parseFloat(y)
+                            yArr.push(y_num);
+                        }
+                        else{
+                            y_num =parseInt(y,10);
+                            yArr.push(y_num);
+                        }
+                        
                     }
             }
             
             // yArr=[1,2,3]
             //operator=[+,-]
             else{
-               
-                y_int =parseInt(y,10);
-                yArr.push(y_int);
-                           
+                if(y.includes(".")){
+                    y_num = parseFloat(y)
+                    yArr.push(y_num);
+                }
+                else{
+                    y_num =parseInt(y,10);
+                    yArr.push(y_num);
+                }
                 operator.push(text[i]);  
                 y=""          
             }  
@@ -34,7 +47,7 @@ jQuery(function(){
             result+=yArr[0]
         }
       
-
+        
         yArr_len = yArr.length;
         operator_len = operator.length;
         if(yArr_len == operator_len){
@@ -44,28 +57,50 @@ jQuery(function(){
         }
     
         else{
-            for(j=0;j<operator_len;j++){            
-                switch(operator[j]){
-                    case '+':
-                        result+=yArr[j+1]
-                        break;
-                    case '-':
-                        result -= yArr[j+1]
-                        break;
-                    case '*':
-                        result *= yArr[j+1]
-                        break;
-                    case '/':
-                        if(yArr[j+1]==0){
-                            result = "Divided by zero!"
+            while(operator.includes("*")){
+                // index.push(operator.findIndex(x => x=="*")) ; // 1+2*3-4 => index = [1]
+                var index = operator.findIndex(x => x=="*");
+                tempval = yArr[index]*yArr[index+1];
+                yArr[index]=tempval;
+                yArr[index+1] = 0 ; // 1 6 0 4 
+                operator[index]= "+" // + + -
+
+            }
+
+            while(operator.includes("/")){
+                // index.push(operator.findIndex(x => x=="*")) ; // 1+6/3-4+5+9/3 => index = [1]
+                var index = operator.findIndex(x => x=="/");
+                var tempval2 = yArr[index]/yArr[index+1];
+                yArr[index]=tempval2;
+                yArr[index+1] = 0 ; // 1 2 0 4 5 3
+                operator[index]= "+" // + + - + + +
+
+            }
+            
+            for(j=0;j<operator_len;j++){   
+                
+              
+                    switch(operator[j]){
+                        case '+':
+                            result+=yArr[j+1]
                             break;
-                        }
-                        
-                        result /= yArr[j+1]
-                        break;
-                    default:
-                        break;
-                }
+                        case '-':
+                            result -= yArr[j+1]
+                            break;
+                        case '/':
+                            if(yArr[j+1]==0){
+                                result = "Divided by zero!"
+                                break;
+                            }
+                            
+                            result /= yArr[j+1]
+                            break;
+                        default:
+                            break;
+                    }
+                
+
+               
             }
             $("#result").val(result)
         }
@@ -77,7 +112,6 @@ jQuery(function(){
     function updateResField(){
         $("button").on("click",function(){
             var text = $(this).text();
-            
             if(text!="clear"&&text!= "="){
               $("#result").val($("#result").val()+text)
             }
@@ -112,9 +146,16 @@ jQuery(function(){
 
         if(e.which == 13){
             calculating( $("#result").val())
-
+        }
+        if(e.which == 16){
+            $("#dotsplash").text(".")
         }
     });
-    
+
+    $(document).on("keyup",function(e){
+        if(e.which == 16){
+            $("#dotsplash").text("/")
+        }
+    });
 })
 
