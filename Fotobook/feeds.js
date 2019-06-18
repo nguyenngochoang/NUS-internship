@@ -20,4 +20,19 @@ $(document).ready(function () {
     $(".HeartAnimation").click(function () {
         $(this).toggleClass("animate");
     });
+
+    // auto fade navbar
+    var lastScrollTop = 0;
+    var $navbar = $('.navbar');
+
+    $(window).scroll(function (event) {
+        var st = $(this).scrollTop();
+
+        if (st > lastScrollTop) { // scroll down
+            $navbar.fadeOut()
+        } else { // scroll up  
+            $navbar.fadeIn()
+        }
+        lastScrollTop = st;
+    });
 });

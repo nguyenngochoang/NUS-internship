@@ -1,5 +1,6 @@
 .userava {
     height: 40px;
+    width: 40px;
 }
 
 html {
@@ -11,20 +12,8 @@ body {
     background-color: #e7e7e7;
 }
 
-.sides {
-    height: 100vh;
-}
-
-.mid {
-    background-color: #ffffff;
-}
-
-.bot {
-    font-size: 14px;
-}
-
-.botdiv {
-    margin-left: -20px;
+.body {
+    margin-top: 80px;
 }
 
 .HeartAnimation {
@@ -32,10 +21,10 @@ body {
     background-repeat: no-repeat;
     background-size: 2900%;
     background-position: left;
-    height:60px;
+    height: 60px;
     width: 60px;
     cursor: pointer;
-    margin: -20px 0px 0px 0px;
+    margin: 0px 0px -25px -20px;
 }
 
 .animate {
@@ -51,10 +40,68 @@ body {
     }
 }
 
-.content{
-    height: 90%;
-    overflow: hidden;
+.container {
+    width: 100vh !important;
+    min-width: 100%;
 }
-.botrow{
-    margin-top:5px;
+
+.responsiveimg {
+    width: 100%;
+    height: 100%;
+}
+
+.mycard {
+    width: 50%;
+    height: auto;
+}
+
+.card {
+    margin-left: -30px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.mid {
+    height: auto;
+    width: 100%;
+}
+
+.likesspan {
+    margin: 0px 0px 0px -20px;
+}
+
+.card-body {
+    position: relative;
+    margin-top:50px;
+}
+
+.bot-element {
+    position: absolute;
+    bottom: 10px;
+}
+
+.bot-element-text {
+    position: absolute;
+    left: 70px;
+    bottom: 3px;
+    font-size: 14px;
+}
+
+hr{
+    margin: 30px -20px 20px;
+    border: 0;
+    border-top: 5px solid #c9c7c7;
+}
+
+.date{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-size: 12px;
+}
+.userInfo{
+    position: absolute;
+    top:20px;
+    left: 20px;
 }

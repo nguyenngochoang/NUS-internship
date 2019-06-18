@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-light bg-primary py-0">
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-primary py-0 ">
         <a class="navbar-brand ml-5 text-white font-weight-bold" href="#">Fotobook</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -50,205 +50,109 @@
 
         </div>
     </nav>
-    <div class="container-fluid mt-4 ">
+    <div class="container body">
         <div class="row">
-            <div class="col-1 sides  ">
-                <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Menu">
-                    <a class=" mt-1 mb-1" href="#">Feeds</a>
-                    <a class=" mb-1" href="#">Discover</a>
-                </div>
+            <div class="col-sm-2">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Feeds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Discover</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-10 mid ">
-                <div class="text-center">
-                    <div class="btn-group mt-2 " role="group" aria-label="MidMenu">
-                        <button type="button" class="btn btn-outline-info">Photo</button>
-                        <button type="button" class="btn btn-outline-info">Album</button>
-                    </div>
-                </div>
-                <!-- Row 1 -->
-                <div class="row mt-4">
-                    <!-- Row1 col1 -->
-                    <div class="col-6">
-                        <div class="row">
-                            <div class="col-6">
-                                <img class="w-100 h-100" src="./images/pnggrad16rgb.png" alt="">
-                            </div>
-                            <div class="col-6">
-                                <div class="row content">
-                                    <div class="input-group w-100 h-* ">
-                                        <img src="./images/default.png" alt="default" class=" py-0 userava">
-                                        <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
-                                        <p class="font-weight-bold mt-2">lorem spectrum</p>
-                                        <p>ahihi</p>
-
-                                    </div>
-                                </div>
-                                <div class="row botrow">
-                                    <div class="col-6 botdiv">
-                                        <!-- <label >❤</label> -->
-                                        <div class="row">
-                                            <div class="col-4">
-                                                <div class="HeartAnimation"></div>
-                                            </div>
-                                            <div class="col-8 bot">123 likes</div>
-                                        </div>
-                                    </div>
-                                    <p class="bot">18/06/2019 16:00:00pm</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- end of Row1 col1 -->
-
-                    <!-- Row2 col2 -->
-                    <div class="col-6">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img class="w-100 h-100" src="./images/sample2.jpeg" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="input-group w-100 h-* ">
-                                            <img src="./images/default.png" alt="default" class=" py-0 userava">
-                                            <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
-                                        </div>
-                                        <p class="font-weight-bold mt-2">lorem spectrum</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iusto possimus
-                                            odio at odit atque iure dolores. A quos provident expedita consectetur repellat,
-                                            laudantium corrupti pariatur vero molestiae perferendis ut!</p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6 botdiv">
-                                            <!-- <label >❤</label> -->
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="HeartAnimation"></div>
-                                                </div>
-                                                <div class="col-8 bot"> likes</div>
-                                            </div>
-                                        </div>
-                                        <p class="bot">18/06/2019 16:00:00pm</p>
-    
-                                    </div>
-    
-                                </div>
-                            </div>
-                        </div>
-                    <!-- end of Row2 col2 -->
-                    
-                </div>
-
-                <!-- end of Row1 -->
-
-                <!-- Row 2 -->
-                <div class="row mt-4">
-                        <!-- Row2 col1 -->
-                        <div class="col-6">
-                            <div class="row">
-                                <div class="col-6">
-                                    <img class="w-100 h-100" src="./images/sample3.jpg" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="input-group w-100 h-* ">
-                                            <img src="./images/default.png" alt="default" class=" py-0 userava">
-                                            <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
-                                        </div>
-                                        <p class="font-weight-bold mt-2">lorem spectrum</p>
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iusto possimus
-                                            odio at odit atque iure dolores. A quos provident expedita consectetur repellat,
-                                            laudantium corrupti pariatur vero molestiae perferendis ut!</p>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6 botdiv">
-                                            <!-- <label >❤</label> -->
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <div class="HeartAnimation"></div>
-                                                </div>
-                                                <div class="col-8 bot">123 likes</div>
-                                            </div>
-                                        </div>
-                                        <p class="bot">18/06/2019 16:00:00pm</p>
-    
-                                    </div>
-    
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!-- end of Row2 col1 -->
-    
-                        <!-- Row2 col2 -->
-                        <div class="col-6">
+            <div class="col-sm-10 mid">
+                <div class="container">
+                    <div class="row">
+                        <!-- A card -->
+                        <div class="col-sm-6 col-md-12 col-lg-12 col-xl-6   ">
+                            <div class="container">
                                 <div class="row">
-                                    <div class="col-6">
-                                        <img class="w-100 h-100" src="./images/sample4.jpg" alt="">
+                                    <div class="col-sm-4 mycard">
+                                        <img class="responsiveimg" src="./images/pnggrad16rgb.png" alt="">
                                     </div>
-                                    <div class="col-6">
-                                        <div class="row">
-                                            <div class="input-group w-100 h-* ">
-                                                <img src="./images/default.png" alt="default" class=" py-0 userava">
-                                                <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
+                                    <div class="col-sm-6 mycard">
+                                        <div class="card">
+                                            <div class="userInfo">
+                                                    <img class="card-img-top img-fluid userava" src="./images/default.png" alt="Card image cap">
+                                                    <a href="#">Hoang Nguyen</a>
                                             </div>
-                                            <p class="font-weight-bold mt-2">lorem spectrum</p>
-                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iusto possimus
-                                                odio at odit atque iure dolores. A quos provident expedita consectetur repellat,
-                                                laudantium corrupti pariatur vero molestiae perferendis ut!</p>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-6 botdiv">
-                                                <!-- <label >❤</label> -->
-                                                <div class="row">
-                                                    <div class="col-4">
-                                                        <div class="HeartAnimation"></div>
-                                                    </div>
-                                                    <div class="col-8 bot"> likes</div>
-                                                </div>
+                                            
+                                            <div class="card-body">
+                                                <h4 class="card-title">Card title</h4>
+                                                <p class="card-text">
+                                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
+                                                    cum atque facilis earum sunt necessitatibus corrupti eos excepturi
+                                                    nobis sequi, odit repellat veniam, minus debitis soluta fugit
+                                                    reprehenderit vitae? Aliquid!
+                                                </p>
+
+
+                                               <hr>
+                                                <div class="HeartAnimation d-inline-block bot-element "></div>
+                                                <span class="likesspan  bot-element-text">123 Likes</span>
+                                                <span class=" date">18/06/19 16:00:00</span>
+                                                
+
+
+
+
                                             </div>
-                                            <p class="bot">18/06/2019 16:00:00pm</p>
-        
                                         </div>
-        
                                     </div>
                                 </div>
                             </div>
-                        <!-- end of Row2 col2 -->
-                        
+                        </div>
+                        <!-- end of A card -->
+
+                        <!-- 2nd card -->
+                        <div class="col-sm-6 col-md-12 col-lg-12 col-xl-6   ">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-4 mycard">
+                                            <img class="responsiveimg" src="./images/pnggrad16rgb.png" alt="">
+                                        </div>
+                                        <div class="col-sm-6 mycard">
+                                            <div class="card">
+                                                <div class="userInfo">
+                                                        <img class="card-img-top img-fluid userava" src="./images/default.png" alt="Card image cap">
+                                                        <a href="#">Hoang Nguyen</a>
+                                                </div>
+                                                
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Card title</h4>
+                                                    <p class="card-text">
+                                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum,
+                                                        cum atque facilis earum sunt necessitatibus corrupti eos excepturi
+                                                        nobis sequi, odit repellat veniam, minus debitis soluta fugit
+                                                        reprehenderit vitae? Aliquid!
+                                                    </p>
+    
+    
+                                                   <hr>
+                                                    <div class="HeartAnimation d-inline-block bot-element "></div>
+                                                    <span class="likesspan  bot-element-text">123 Likes</span>
+                                                    <span class=" date">18/06/19 16:00:00</span>
+                                                    
+    
+    
+    
+    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- end of 2nd card -->
                     </div>
-                <!-- end of Row2 -->
+                </div>
             </div>
-            <div class="text-center">
-                    <nav aria-label="...">
-                            <ul class="pagination">
-                              <li class="page-item ">
-                                <a class="page-link" href="#!" tabindex="-1">Previous</a>
-                              </li>
-                              <li class="page-item"><a class="page-link" href="#!">1</a></li>
-                              <li class="page-item active">
-                                <a class="page-link" href="#!">2 <span class="sr-only">(current)</span></a>
-                              </li>
-                              <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                              <li class="page-item">
-                                <a class="page-link" href="#!">Next</a>
-                              </li>
-                            </ul>
-                          </nav>
-            </div>
+            <div class="col-sm-1"></div>
         </div>
-        <br>
-        <!--Pagination  -->
-        
-        
-        <!-- end of Pagination -->
-              
     </div>
 
-
-    </div>
 </body>
 
 </html>
