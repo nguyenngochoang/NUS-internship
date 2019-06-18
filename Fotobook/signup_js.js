@@ -11,7 +11,7 @@ $(document).ready(function () {
             }
         });
 
-    $(".loginbtn").mouseleave(function () {
+    $(".loginbtn").mouseout(function () {
         stopAnimation = true;
     });
 
@@ -30,10 +30,8 @@ $(document).ready(function () {
 
         }
     );
-    $(".signupbtn").mouseleave(function () {
+    $(".signupbtn").mouseout(function () {
         stopAnimation = true;
     });
-
-
-
+    
 });
