@@ -8,7 +8,8 @@
     <title>Feeds</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="feeds.css">
+    <link rel="stylesheet" href="./feeds.css">
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -20,7 +21,7 @@
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <script src="./feeds.css"></script>
+    <script src="./feeds.js"></script>
 </head>
 
 <body>
@@ -31,7 +32,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
+        <div class="navbar-collapse collapse show" id="navbarSupportedContent">
             <form class="form-inline my-2 my-lg-0 w-100">
                 <input class="form-control mr-sm-2 h-25 w-50" type="text" placeholder="Search photo/album"
                     aria-label="Search">
@@ -49,18 +50,204 @@
 
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid mt-4 ">
         <div class="row">
-            <div class="col-1">
-                <!-- Content -->
+            <div class="col-1 sides  ">
+                <div class="btn-group-vertical btn-group-sm" role="group" aria-label="Menu">
+                    <a class=" mt-1 mb-1" href="#">Feeds</a>
+                    <a class=" mb-1" href="#">Discover</a>
+                </div>
             </div>
-            <div class="col-10 bg-primary">
-                <!-- Content -->
+            <div class="col-10 mid ">
+                <div class="text-center">
+                    <div class="btn-group mt-2 " role="group" aria-label="MidMenu">
+                        <button type="button" class="btn btn-outline-info">Photo</button>
+                        <button type="button" class="btn btn-outline-info">Album</button>
+                    </div>
+                </div>
+                <!-- Row 1 -->
+                <div class="row mt-4">
+                    <!-- Row1 col1 -->
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="w-100 h-100" src="./images/pnggrad16rgb.png" alt="">
+                            </div>
+                            <div class="col-6">
+                                <div class="row content">
+                                    <div class="input-group w-100 h-* ">
+                                        <img src="./images/default.png" alt="default" class=" py-0 userava">
+                                        <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
+                                        <p class="font-weight-bold mt-2">lorem spectrum</p>
+                                        <p>ahihi</p>
+
+                                    </div>
+                                </div>
+                                <div class="row botrow">
+                                    <div class="col-6 botdiv">
+                                        <!-- <label >❤</label> -->
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <div class="HeartAnimation"></div>
+                                            </div>
+                                            <div class="col-8 bot">123 likes</div>
+                                        </div>
+                                    </div>
+                                    <p class="bot">18/06/2019 16:00:00pm</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- end of Row1 col1 -->
+
+                    <!-- Row2 col2 -->
+                    <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-100 h-100" src="./images/sample2.jpeg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="input-group w-100 h-* ">
+                                            <img src="./images/default.png" alt="default" class=" py-0 userava">
+                                            <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
+                                        </div>
+                                        <p class="font-weight-bold mt-2">lorem spectrum</p>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iusto possimus
+                                            odio at odit atque iure dolores. A quos provident expedita consectetur repellat,
+                                            laudantium corrupti pariatur vero molestiae perferendis ut!</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 botdiv">
+                                            <!-- <label >❤</label> -->
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="HeartAnimation"></div>
+                                                </div>
+                                                <div class="col-8 bot"> likes</div>
+                                            </div>
+                                        </div>
+                                        <p class="bot">18/06/2019 16:00:00pm</p>
+    
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    <!-- end of Row2 col2 -->
+                    
+                </div>
+
+                <!-- end of Row1 -->
+
+                <!-- Row 2 -->
+                <div class="row mt-4">
+                        <!-- Row2 col1 -->
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="w-100 h-100" src="./images/sample3.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <div class="row">
+                                        <div class="input-group w-100 h-* ">
+                                            <img src="./images/default.png" alt="default" class=" py-0 userava">
+                                            <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
+                                        </div>
+                                        <p class="font-weight-bold mt-2">lorem spectrum</p>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iusto possimus
+                                            odio at odit atque iure dolores. A quos provident expedita consectetur repellat,
+                                            laudantium corrupti pariatur vero molestiae perferendis ut!</p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 botdiv">
+                                            <!-- <label >❤</label> -->
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="HeartAnimation"></div>
+                                                </div>
+                                                <div class="col-8 bot">123 likes</div>
+                                            </div>
+                                        </div>
+                                        <p class="bot">18/06/2019 16:00:00pm</p>
+    
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- end of Row2 col1 -->
+    
+                        <!-- Row2 col2 -->
+                        <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img class="w-100 h-100" src="./images/sample4.jpg" alt="">
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <div class="input-group w-100 h-* ">
+                                                <img src="./images/default.png" alt="default" class=" py-0 userava">
+                                                <a class="my-2 mx-2" href="#">Hoang Nguyen</a>
+                                            </div>
+                                            <p class="font-weight-bold mt-2">lorem spectrum</p>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iusto possimus
+                                                odio at odit atque iure dolores. A quos provident expedita consectetur repellat,
+                                                laudantium corrupti pariatur vero molestiae perferendis ut!</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6 botdiv">
+                                                <!-- <label >❤</label> -->
+                                                <div class="row">
+                                                    <div class="col-4">
+                                                        <div class="HeartAnimation"></div>
+                                                    </div>
+                                                    <div class="col-8 bot"> likes</div>
+                                                </div>
+                                            </div>
+                                            <p class="bot">18/06/2019 16:00:00pm</p>
+        
+                                        </div>
+        
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- end of Row2 col2 -->
+                        
+                    </div>
+                <!-- end of Row2 -->
             </div>
-            <div class="col-1">
-                <!-- Content -->
+            <div class="text-center">
+                    <nav aria-label="...">
+                            <ul class="pagination">
+                              <li class="page-item ">
+                                <a class="page-link" href="#!" tabindex="-1">Previous</a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                              <li class="page-item active">
+                                <a class="page-link" href="#!">2 <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#!">Next</a>
+                              </li>
+                            </ul>
+                          </nav>
             </div>
         </div>
+        <br>
+        <!--Pagination  -->
+        
+        
+        <!-- end of Pagination -->
+              
+    </div>
+
+
     </div>
 </body>
 

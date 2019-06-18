@@ -6,8 +6,9 @@ $(document).ready(function () {
                 stopAnimation = false;
             }
             else {
-                $(".loginbtn").animate({ opacity: "-=0.5" }, "slow");
-                $(".loginbtn").animate({ opacity: "+=0.5" }, "slow", animation);
+
+                $(".logoutbtn").animate({ opacity: "-=0.5" }, "slow");
+                $(".logoutbtn").animate({ opacity: "+=0.5" }, "slow", animation);
             }
         });
 
@@ -15,5 +16,8 @@ $(document).ready(function () {
         stopAnimation = true;
     });
 
-    
+
+    $(".HeartAnimation").click(function () {
+        $(this).toggleClass("animate");
+    });
 });

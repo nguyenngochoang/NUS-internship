@@ -1,4 +1,60 @@
-.userava{
+.userava {
     height: 40px;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-color: #e7e7e7;
+}
+
+.sides {
+    height: 100vh;
+}
+
+.mid {
+    background-color: #ffffff;
+}
+
+.bot {
+    font-size: 14px;
+}
+
+.botdiv {
+    margin-left: -20px;
+}
+
+.HeartAnimation {
+    background-image: url('./images/web_heart_animation.png');
+    background-repeat: no-repeat;
+    background-size: 2900%;
+    background-position: left;
+    height:60px;
+    width: 60px;
+    cursor: pointer;
+    margin: -20px 0px 0px 0px;
+}
+
+.animate {
+    animation: heart-burst .8s steps(28) forwards;
+}
+
+@keyframes heart-burst {
+    0% {
+        background-position: left
+    }
+    100% {
+        background-position: right
+    }
+}
+
+.content{
+    height: 90%;
+    overflow: hidden;
+}
+.botrow{
+    margin-top:5px;
+}
