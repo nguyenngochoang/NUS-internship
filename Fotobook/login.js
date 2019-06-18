@@ -14,5 +14,22 @@ $(document).ready(function () {
     $(".loginbtn").mouseout(function () {
         stopAnimation = true;
     });
+
+    $(".loginbtn2").mouseover(
+        function animation() {
+            if (stopAnimation) {
+                stopAnimation = false;
+            }
+            else {
+                $(".loginbtn2").animate({ width: "+=25px" }, "slow");
+                $(".loginbtn2").animate({ width: "-=25px" }, "slow", animation);
+            }
+
+
+        }
+    );
+    $(".loginbtn2").mouseout(function () {
+        stopAnimation = true;
+    });
     
 });
