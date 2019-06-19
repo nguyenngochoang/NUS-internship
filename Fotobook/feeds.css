@@ -40,7 +40,7 @@ body {
     }
 }
 
-.container {
+.container.body {
     width: 100vh !important;
     min-width: 100%;
 }
@@ -50,16 +50,19 @@ body {
     height: 100%;
 }
 
-.mycard {
-    width: 50%;
-    height: auto;
+.row{
+    height: fit-content;
+   
 }
 
-.card {
-    margin-left: -30px;
-    width: 100%;
-    height: 100%;
-    position: relative;
+.row-text{
+    margin:50px 0px 0px 10px;
+    height: 10em;
+    overflow: auto;
+}
+
+.card-text{
+    overflow: scroll;
 }
 
 .mid {
@@ -68,7 +71,7 @@ body {
 }
 
 .likesspan {
-    margin: 0px 0px 0px -20px;
+    margin: 0px 0px 0px -40px;
 }
 
 .card-body {
@@ -76,6 +79,14 @@ body {
     margin-top:50px;
 }
 
+.card{
+    border: none;
+}
+
+.content{
+    border: #c9c7c7 solid 1px;
+    background-color: #e7e7e7;
+}
 .bot-element {
     position: absolute;
     bottom: 10px;
@@ -89,9 +100,11 @@ body {
 }
 
 hr{
-    margin: 30px -20px 20px;
+    position: absolute;
     border: 0;
-    border-top: 5px solid #c9c7c7;
+    border-top: 3px solid #c9c7c7;
+    bottom: 10px;
+    width: 95%;
 }
 
 .date{
@@ -102,6 +115,25 @@ hr{
 }
 .userInfo{
     position: absolute;
-    top:20px;
+    top:0px;
     left: 20px;
+}
+.userInfo a{
+   margin:10px 0px 0px 5px;
+}
+
+.img{
+    background-image: url("./images/pnggrad16rgb.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    min-height: 20em;
+}
+
+.col-lg-10{
+    background-color: white;
+}
+
+.content p{
+    margin-top: -20px;
 }
