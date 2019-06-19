@@ -1,0 +1,5 @@
+ source 'https://rubygems.org'
+
+ 
+ gem 'a0'
+ gem 'a1412tk_bmi'

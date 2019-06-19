@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    a (0.2.8)
+    a1425bt (2.1.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  a
+  a1425bt
+
+BUNDLED WITH
+   1.17.3
