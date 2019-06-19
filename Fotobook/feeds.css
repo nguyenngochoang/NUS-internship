@@ -52,7 +52,7 @@ body {
 
 .row{
     height: fit-content;
-   
+
 }
 
 .row-text{
@@ -123,8 +123,9 @@ hr{
 }
 
 .img{
-    background-image: url("./images/pnggrad16rgb.png");
-    background-size: cover;
+    background-image: url("./images/sample2.jpeg");
+    background-size:100% 100%;
+
     background-repeat: no-repeat;
     height: auto;
     min-height: 20em;
