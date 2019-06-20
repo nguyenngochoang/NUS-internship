@@ -68,10 +68,26 @@ xxx.age
         include Persistence
       end
   =end
+
+  =begin
     # public method cho phép bất cứ ai có thể gọi tới nó.
     # protected method : Gần giống private tuy nhiên nó khác với private ở chỗ protected có thể gọi tường minh
-    bằng self.
-    # private method chỉ cho phép gọi bên trong nội bộ class. Không thể gọi private method từ bên ngoài, không thể gọi một cách tường minh, dù đó là self.
+    bằng self từ lớp con.
+    # private method chỉ cho phép gọi bên trong nội bộ class. Không thể gọi private method từ bên ngoài, không thể gọi một cách tường minh, dù đó là self.Ví dụ code bên dưới
+
+=end
+
+class Dad
+  protected
+  def abc
+    puts "say somethings...."
+  end
+end
 
 
+class Son < Dad
+  def say
+    self.abc #can't do this if abc is private
+  end
+end
 
