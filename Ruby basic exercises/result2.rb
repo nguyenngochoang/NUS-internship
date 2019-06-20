@@ -69,10 +69,9 @@ xxx.age
       end
   =end
     # public method cho phép bất cứ ai có thể gọi tới nó.
-    # protected method : Gần giống private tuy nhiên nó cho phép lớp con gọi nhưng phải thông qua 1 public method nào đó, không được gọi trực tiếp.
-    # private method chỉ cho phép gọi bên trong nội bộ class. Không thể gọi private method từ bên ngoài.
-  =begin
+    # protected method : Gần giống private tuy nhiên nó khác với private ở chỗ protected có thể gọi tường minh
+    bằng self.
+    # private method chỉ cho phép gọi bên trong nội bộ class. Không thể gọi private method từ bên ngoài, không thể gọi một cách tường minh, dù đó là self.
 
-  =end
 
 
