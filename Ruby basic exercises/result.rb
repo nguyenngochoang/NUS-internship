@@ -1,4 +1,4 @@
-# ruby không support toán tử ++, nếu muống thực hiện ++ có thể dùng hàm succ
+#ruby doesn't support ++ operator, can use succ method instead
 
 #check 18+
 def check_18(age)
