@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-    arr =["./images/uploads/pnggrad16rgb.png","./images/uploads/sample2.jpeg","./images/uploads/sample3.jpg","./images/uploads/sample4.jpg","./images/uploads/sample5.jpeg","./images/uploads/sample6.jpeg"];
 
 
+    // animation for button logout
     var stopAnimation = false;
     $(".logoutbtn").mouseover(
         function animation() {
@@ -20,10 +20,14 @@ $(document).ready(function () {
         stopAnimation = true;
     });
 
+    // end of logout aninmations
 
+    //heart animation for love bttuon
     $(".HeartAnimation").click(function () {
         $(this).toggleClass("animate");
     });
+    //end of heart animation
+
 
     // auto fade navbar
     var lastScrollTop = 0;
@@ -40,9 +44,12 @@ $(document).ready(function () {
         lastScrollTop = st;
     });
 
+    //end of auto fade navbar
+
+    // navigations from this photo to another
     var index;
     var backgroundUrl;
-    arr= [];
+    arr= []; //array to load all images of feeds
     $(".innerImg").each(function(){
         arr.push($(this).attr("src"));
     });
@@ -90,6 +97,6 @@ $(document).ready(function () {
 
     });
 
-
+    // end of navigations from this photo to another
 
 });
