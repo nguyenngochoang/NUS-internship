@@ -80,6 +80,7 @@ body {
 }
 
 .mid {
+    position: relative;
     height: auto;
     width: 100%;
 }

@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    $(".hidethis").hide();
 
 
     // animation for button logout
@@ -98,5 +99,13 @@ $(document).ready(function () {
     });
 
     // end of navigations from this photo to another
+    var $thisdiv = $(".hidethis:first");
+    $(window).scroll(function() {
+        if($(window).scrollTop() == $(document).height() - $(window).height()){
+            $thisdiv.show();
+            $thisdiv=$thisdiv.next();
 
+
+        }
+    })
 });
