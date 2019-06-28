@@ -1,0 +1,14 @@
+<h1>New Comments</h1>
+<%= form_with model:[@article,@article.comments.build], local:true do |comment|%>
+   <p>
+      <%= comment.label :author%>
+      <%= comment.text_field :author%>
+   </p>
+
+   <p>
+      <%= comment.label :body%>
+      <%= comment.text_area :body%>
+   </p>
+
+   <%= comment.submit%>
+<% end %>

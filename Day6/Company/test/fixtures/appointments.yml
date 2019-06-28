@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2019-06-27 14:15:34
+  employee: one
+  customer: one
+
+two:
+  time: 2019-06-27 14:15:34
+  employee: two
+  customer: two

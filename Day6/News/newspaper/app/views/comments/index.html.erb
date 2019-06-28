@@ -1,0 +1,17 @@
+<table>
+
+  <tr>
+    <th>Author</th>
+    <th>Body</th>
+  </tr>
+  <% @comment.each do |item| %>
+  <tr>
+      <td><%= item.author%></td>
+      <td> <%= item.body%> </td>
+      <td> <%# link_to 'Show', article_path(item) %> </td>
+    <% end %>
+  </tr>
+
+</table>
+
+<%= link_to 'Back', articles_path %>

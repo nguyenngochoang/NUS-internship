@@ -1,0 +1,27 @@
+<h1>Hello boss!</h1>
+<%= link_to 'Add new Customers', new_employee_customer_path %>
+<table>
+
+  <tr>
+    <th>ID</th>
+    <th>name</th>
+    <th>Email</th>
+  </tr>
+  <% @employee.customers.each do |item| %>
+  <tr>
+      <td> <%= item.id%> </td>
+      <td><%= item.name%></td>
+      <td> <%= item.email%> </td>
+      <td> <%= link_to 'Create an appointment', new_customer_appointment_path(item) %> </td>
+      <td> <%= link_to 'Edit customer Info', edit_customer_path(item) %> </td>
+      <td><%= link_to 'Delete', customer_path(item),
+              method: :delete,
+              data: { confirm: 'Are you sure?' }%></td>
+
+      </td>
+    <% end %>
+  </tr>
+
+</table>
+
+<%= link_to 'Back', employees_path %>

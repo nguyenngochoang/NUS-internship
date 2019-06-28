@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  language: MyString
+  comment_lang: MyString
+  comment: one
+
+two:
+  language: MyString
+  comment_lang: MyString
+  comment: two
